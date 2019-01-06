@@ -1,0 +1,13 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:oxy="clr-namespace:OxyPlot.Avalonia;assembly=OxyPlot.Avalonia"
+        Title="AvaloniaSimpleApp1" Width="600" Height="400">
+    <DockPanel>
+      <TextBlock  DockPanel.Dock="Bottom" Margin="8" Text="{Binding TotalNumberOfPoints, StringFormat='Total number of data points: {0}'}"/>
+      
+      <!--<oxy:PlotView x:Name="plot1" Model="{Binding PlotModel}"/> -->
+      
+      <oxy:PlotView Model="{Binding PlotModel}"/>
+      
+    </DockPanel>
+</Window>
