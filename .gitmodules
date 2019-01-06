@@ -1,0 +1,3 @@
+[submodule "ExtLib/oxyplot-avalonia"]
+	path = ExtLib/oxyplot-avalonia
+	url = https://github.com/olfk/oxyplot-avalonia.git
