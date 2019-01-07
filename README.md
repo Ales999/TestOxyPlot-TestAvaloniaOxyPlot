@@ -1,6 +1,8 @@
 # TestOxyPlot-TestAvaloniaOxyPlot
 
-Simple test dynamic plot, with [Avalonia](https://github.com/AvaloniaUI/Avalonia), current is **NOT** work.
+Simple test dynamic plot, with [Avalonia](https://github.com/AvaloniaUI/Avalonia),
+current status is **Working** with very slow update screen and memory leak.
+
 
 Clone as:
 
