@@ -28,9 +28,11 @@ namespace AvaloniaSimpleApp1
         private readonly Stopwatch watch = new Stopwatch();
         private int numberOfSeries;
         private SimulationType simulationType;
+        private SynchronizationContext _sc; 
 
         public MainViewModel()
         {
+            this._sc = SynchronizationContext.Current;
             this.timer = new Timer(OnTimerElapsed);
             this.Function = (t, x, a) => Math.Cos(t * a) * (x == 0 ? 1 : Math.Sin(x * a) / x);
             this.SimulationType = SimulationType.Waves;
@@ -86,7 +88,8 @@ namespace AvaloniaSimpleApp1
 
             }
 
-            this.PlotModel.InvalidatePlot(true);
+            _sc.Post(o => PlotModel.InvalidatePlot(true), null);
+
         }
 
         private void Update()

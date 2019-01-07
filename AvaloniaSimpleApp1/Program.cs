@@ -12,7 +12,7 @@ namespace AvaloniaSimpleApp1
         static void Main(string[] args)
         {
             OxyPlotModule.EnsureLoaded();
-            InitializeLogging();
+           // InitializeLogging();
             BuildAvaloniaApp().Start<MainWindow>();
         }
 
